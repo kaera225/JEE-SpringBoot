@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th= "http://www.thymeleaf.org" xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta charset="UTF-8">
+	<title>Banque</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/myStyle.css" th:href="@{/css/myStyle.css}"/>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li>
+						<a th:href="@{/operations}">Operations</a>
+					</li>
+					<li>
+						<a th:href="@{/compte}">Comptes</a>
+					</li>
+					<li>
+						<a th:href="@{/client}">Clients</a>
+					</li>
+				</ul>
+				<ul class = "nav navbar-nav navbar-right">
+					<li>
+						<a th:href="@{/login?logout}">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section layout:fragment="content">
+		
+	</section>
+	<footer>
+		<div class="navbar-fixed-bottom">
+			<small>@Adresse de notre Banque</small>
+		</div>
+	</footer>
+</body>
+</html>
